@@ -1,0 +1,21 @@
+footer {
+  background: orange;
+  background: linear-gradient(0deg, rgb(218, 49, 19) 0%, rgb(211, 66, 9) 35%, rgb(233, 140, 86) 100%);
+
+    margin-top: 1em;
+    position: fixed;
+    bottom: 0;
+    width: 99%;
+    /* max-width: 1366px; */
+  }
+  
+  footer p {
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
+    text-align: center;
+  }
+  
+  footer span {
+    font-size: 1.3em;
+  }
