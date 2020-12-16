@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "gaeva-5412a": {
+      "hosting": {
+        "h-gaeva": [
+          "gaeva-5412a"
+        ]
+      }
+    }
+  }
+}
