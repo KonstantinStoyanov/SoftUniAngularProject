@@ -3,12 +3,14 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AngularFireModule} from '@angular/fire'
+import {AngularFireAuth} from '@angular/fire/auth'
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { HeaderComponent } from './core/header/header.component';
 import { FooterComponent } from './core/footer/footer.component';
 import { AboutComponent } from './about/about.component';
 import { environment } from 'src/environments/environment';
+import { CoreModule } from './core/core.module';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,8 @@ import { environment } from 'src/environments/environment';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,AngularFireModule.initializeApp(environment.firebase)
+    AppRoutingModule,AngularFireModule.initializeApp(environment.firebase),
+    CoreModule
   ],
   providers: [],
   bootstrap: [AppComponent,

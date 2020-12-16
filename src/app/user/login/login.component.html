@@ -1,1 +1,16 @@
-<p>login works!</p>
+<div id="absoluteCenteredDiv">
+    <form #f="ngForm" class="login" (ngSubmit)="submitFormHandler(f.value)">
+        <div class="box">
+            <h1>Login Form</h1>
+            <input #userEmail="ngModel" class="username" name="email" type="text" placeholder="User Email" ngModel>
+
+            <input #userPassword="ngModel" class="username" name="password" type="password" placeholder="******" ngModel >
+
+
+            <button class="button">login</button>
+        </div>
+    </form>
+    
+</div>
+
+

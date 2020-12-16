@@ -1,1 +1,14 @@
-<p>register works!</p>
+<div id="absoluteCenteredDiv">
+    <form #f="ngForm" class="login" (ngSubmit)="submitFormHandler(f.value)">
+        <div class="box">
+            <h1>Register Form</h1>
+            <input #userEmail="ngModel" class="username" name="email" type="text" placeholder="User Email" ngModel>
+
+            <input #userPassword="ngModel" class="username" name="password" type="password" placeholder="******" ngModel >
+
+
+            <button class="button">Register</button>
+        </div>
+    </form>
+  
+</div>
