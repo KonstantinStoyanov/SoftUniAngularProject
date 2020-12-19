@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import{getPictureComponent} from '../picture/getPicture/getPicture.component'
 
 @Component({
   selector: 'app-home',

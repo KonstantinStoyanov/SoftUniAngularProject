@@ -5,13 +5,13 @@
 export const environment = {
   production: false,
   firebase: {
-    apiKey: 'AIzaSyD1yY9nejG2KiaVXVSBB57PyYCwlvlt7UM',
-    authDomain: 'gaeva-5412a.firebaseapp.com',
-    databaseURL: 'https://gaeva-5412a-default-rtdb.firebaseio.com',
-    projectId: 'gaeva-5412a',
-    storageBucket: 'gaeva-5412a.appspot.com',
-    messagingSenderId: '761078323472',
-    appId: '1:761078323472:web:4edb078f6a5aa5fd6bed95',
+    apiKey: 'AIzaSyBh6plk4kihJMZvvLll6cFPN1EGotEtXqE',
+    authDomain: 'gaeva-2.firebaseapp.com"',
+    databaseURL: 'https://gaeva-2-default-rtdb.firebaseio.com',
+    projectId: "gaeva-2",
+    storageBucket: "gaeva-2.appspot.com",
+    messagingSenderId: "740376849060",
+    appId: "1:740376849060:web:12a840b51c977aee2ad431",
     // measurementId: '<your-measurement-id>'
   }
 };

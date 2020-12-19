@@ -29,6 +29,7 @@ export class LoginComponent implements OnInit {
 
   submitFormHandler(formValue: { email: string, password: string }):void {
     this.userService.login(formValue.email,formValue.password)
+    
     }
   }
 

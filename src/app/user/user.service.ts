@@ -10,10 +10,13 @@ import {LoginComponent} from './login/login.component';
 
 
 
+
 @Injectable()
 export class UserService {
   isLoading = false;
   errorMessage = '';
+  userEmail=''
+  private readonly newProperty = this.userEmail;
 
 constructor (
   public auth: AngularFireAuth,
@@ -38,12 +41,15 @@ login(email: string, password: string) {
   this.auth
     .signInWithEmailAndPassword(email, password)
     .then(value => {
-      console.log('Nice, it worked!');
+      console.log(value.user?.email);
+      this.userEmail=email;
+     
       this.isLoading = true;
       this.router.navigate(['/'])
     })
     .catch(err => {
-      console.log('Something went wrong:',err.message);
+
+      console.log('Something went wrong:',err.message,err);
     });
 }
 
@@ -60,6 +66,7 @@ logout() {
 
  
 }
+
 
 
 
