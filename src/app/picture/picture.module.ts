@@ -1,23 +1,26 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { getPictureComponent } from './getPicture/getPicture.component';
-import {AngularFirestoreModule} from '@angular/fire/firestore/'
 import { PictureService } from './picture.service';
 import { SharedModule } from '../shared/shared.module';
 import { AppRoutingModule } from '../app-routing.module';
+import { DetailComponent } from './detail/detail.component';
+import { PictureRoutingModule } from './picture-routing.module';
 
 
 
 
 @NgModule({
   declarations: [
-    getPictureComponent],
+    getPictureComponent,
+    DetailComponent],
   imports: [
     CommonModule,
-    AngularFirestoreModule,
     SharedModule,
-    AppRoutingModule
+    AppRoutingModule,
+    PictureRoutingModule
   ],
+  exports:[getPictureComponent],
   providers:[
     PictureService
   ]

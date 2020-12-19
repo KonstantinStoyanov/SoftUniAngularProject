@@ -10,13 +10,13 @@ export class getPictureComponent implements OnInit {
 
   userList: any;
   constructor(
-    private PictureS: PictureService,
+    private pictureS: PictureService,
 
 
   ) { }
 
   ngOnInit() {
-    this.PictureS.loadPicture().subscribe(userList => {
+    this.pictureS.loadPicture().subscribe(userList => {
       this.userList = userList;
     }
     )

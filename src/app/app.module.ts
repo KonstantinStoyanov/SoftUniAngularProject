@@ -13,7 +13,6 @@ import { environment } from 'src/environments/environment';
 import { CoreModule } from './core/core.module';
 import {HttpClientModule} from '@angular/common/http'
 import { PictureModule } from './picture/picture.module';
-import { getPictureComponent } from './picture/getPicture/getPicture.component';
 import { PictureService } from './picture/picture.service';
 
 
@@ -31,9 +30,7 @@ import { PictureService } from './picture/picture.service';
     PictureModule
   ],
   providers: [PictureService],
-  bootstrap: [AppComponent,
-  HeaderComponent,
-  getPictureComponent,
-FooterComponent]
+  bootstrap: [AppComponent,HeaderComponent,FooterComponent
+  ]
 })
 export class AppModule { }

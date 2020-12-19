@@ -32,7 +32,13 @@ const routes: Routes = [
         data: {
           title: 'about'
         }
-      }
+      },
+      // {
+      //   path: 'user/detail/:id',
+       
+      //   loadChildren: () => import('./picture/picture.module').then(m => m.PictureModule)
+      // }
+      
       
      
     ]

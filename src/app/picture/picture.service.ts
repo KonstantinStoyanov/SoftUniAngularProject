@@ -27,5 +27,8 @@ export class PictureService {
     return this.http.get<any>(url).pipe(map(x => this.mapArr(x)))
   }
 
+ 
+
+  
 }
 

@@ -1,0 +1,17 @@
+<div *ngIf="userList">
+  <div *ngFor="let user of userList">
+    <div *ngIf="id(user.id,currentPictureId)">
+      <div>
+        <img
+          src="https://firebasestorage.googleapis.com/v0/b/gaeva-2.appspot.com/o/picture%20%2F{{user.id}}.jpg?alt=media"
+          alt="Alternative Text" class="img-responsive img-shadow" height="300" width="200">
+      </div>
+      <li>AUTHOR: {{user.AUTHOR}}</li>
+      <li>TITLE: {{user.TITLE}}</li>
+      <li>YEAR: {{user.YEAR}}</li>
+      <li>TECHNOLOGY: {{user.TECHNOLOGY}}</li>
+      <li>PRICE: {{user.PRICE}}</li>
+    </div>
+  </div>
+</div>
+

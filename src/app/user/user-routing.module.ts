@@ -1,4 +1,5 @@
 import { RouterModule, Routes } from '@angular/router';
+import { DetailComponent } from '../picture/detail/detail.component';
 import { LoginComponent } from './login/login.component';
 import { ProfileComponent } from './profile/profile.component';
 import { RegisterComponent } from './register/register.component';
@@ -28,6 +29,10 @@ const routes: Routes = [
       isLogged: true,
       title: 'USER PROFILE'
     }
+  },
+  {
+    path: 'user/detail/:id',
+    component: DetailComponent
   }
 ];
 

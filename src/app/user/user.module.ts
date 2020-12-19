@@ -6,6 +6,7 @@ import { ProfileComponent } from './profile/profile.component';
 import { UserRoutingModule } from './user-routing.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { UserService } from './user.service';
+import { PictureRoutingModule } from '../picture/picture-routing.module';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,6 @@ import { UserService } from './user.service';
     UserRoutingModule,
     FormsModule,
     ReactiveFormsModule
-    
   ],
   providers: [
     UserService
