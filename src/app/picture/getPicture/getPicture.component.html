@@ -1,47 +1,26 @@
 <app-loader></app-loader>
-<div class="row text-center" *ngIf="userList">
-    <div class="ws-about-team col-sm-12 centered">
-        <div class="row exhibitions">
-
-
-
-            <div class="col-xs-12 col-sm-12 col-md-4 ws-about-team-item exhibition-item">
-                <div *ngFor="let user of userList">
-                    <div class="caption">
-                        <h5><a [routerLink]="['/user/detail/', user.id]">{{user.TITLE}}</a></h5>
-                        <div class="ws-item-category"><i class="glyphicon glyphicon-calendar"></i>
-                            {{user.YEAR}}<br>
-                        </div>
-                    </div>
-                    <a [routerLink]="['/user/detail/', user.id]">
-                        <img src="https://firebasestorage.googleapis.com/v0/b/gaeva-2.appspot.com/o/picture%20%2F{{user.id}}.jpg?alt=media"
-                            alt="Alternative Text" class="img-responsive img-shadow" height="300" width="200">
-                    </a>
-
-
-
-                    <div *ngIf="newRow(user.id)" class="row">
-
-                        <div class="col-xs-12 col-sm-12 col-md-4 ws-about-team-item exhibition-item">
-                            <div class="caption">
-                                <h5><a [routerLink]="['/user/detail/', user.id]">{{user.TITLE}}</a></h5>
-                                <div class="ws-item-category"><i class="glyphicon glyphicon-calendar"></i>
-                                    {{user.YEAR}}<br>
-                                </div>
-                            </div>
-                            <a [routerLink]="['/user/detail/', user.id]">
-                                <img src="https://firebasestorage.googleapis.com/v0/b/gaeva-2.appspot.com/o/picture%20%2F{{user.id}}.jpg?alt=media"
-                                    alt="Alternative Text" class="img-responsive img-shadow" height="300" width="200">
-                            </a>
-
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-        </div>
+<div class="home-picture" *ngIf="userList">
+  <div class="picture" *ngFor="let user of userList">
+      <div>
+      <h5 >
+        <a [routerLink]="['/user/detail/', user.id]" >{{ user.TITLE }}</a>
+      </h5>
+      
+   <div class="some-picture">
+    <a [routerLink]="['/user/detail/', user.id]">
+      <img
+        src="https://firebasestorage.googleapis.com/v0/b/gaeva-2.appspot.com/o/picture%20%2F{{
+          user.id
+        }}.jpg?alt=media"
+        alt="Alternative Text"
+        class="image"
+        height="300"
+        width="200"
+      />
+    </a>
+</div>
+    <div class="technology">Tehnology:{{ user.TECHNOLOGY }}
     </div>
+  </div>
+</div>
 </div>
